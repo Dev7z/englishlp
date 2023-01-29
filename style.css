@@ -105,3 +105,55 @@ body {
 .leftmargin{
     margin-left: 50px;
 }
+
+.btn2{
+    position: relative;
+    margin-top: 25px;
+    background-color: transparent;
+    color: white;
+    border-style: dotted;
+    padding: 15px 48px 15px 48px;
+    border-color: #595442;
+    font-size: 25px;
+    font-family: 'Astronomus';
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* add this */
+    border-image: linear-gradient(180deg,#1a2e46 0,#e86e37 71%,#ff9646) 2;
+    margin-right: 50px;
+
+    line-height: 100%;
+}
+
+.btn2::after {
+    content: "";
+    border-bottom: 2px solid black;
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    width: 70%;
+}
+
+.btn2::before {
+    content: "";
+    border-top: 2px solid black;
+    position: absolute;
+    top: -2px;
+    left: 15%;
+    width: 70%;
+}
+
+.btn2:hover{
+    color: #595442;
+}
+
+.gentxt{
+    color: white;
+    font-size: 24px;
+}
+
+cont{
+    color: white;
+    font-size: 22px;
+    font-family: 'Conthrax';
+    src: url('./conthrax-sb.ttf') format('truetype');
+}
